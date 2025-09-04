@@ -90,7 +90,7 @@ export default function Hero() {
 
           {/* YouTube */}
           <a
-            href="https://www.youtube.com/channel/UCmYb2ejLgKTp9ypVJX_-Gyw"
+            href="https://www.youtube.com/channel/UCa78e96_ZEqmxQ6DsoLkS2w"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-gold transition transform hover:scale-110"
@@ -117,7 +117,7 @@ export default function Hero() {
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/kennyramp.official"
+            href="https://www.instagram.com/kennyramp"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-gold transition transform hover:scale-110"
