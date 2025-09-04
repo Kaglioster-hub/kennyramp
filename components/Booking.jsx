@@ -4,7 +4,7 @@ export default function Booking(){
       <div className="container text-center">
         <h2 className="section-title">🎤 Booking</h2>
         <p className="text-gray-300">
-          Per eventi e collaborazioni potete inviare una mail con la descrizione della vostra richiesta a: <a href="mailto:kenny@vrabo.it" className="text-gold hover:underline">booking@kennyramp.com</a>
+          Per eventi e collaborazioni potete inviare una mail con la descrizione della vostra richiesta a: <a href="mailto:kenny@vrabo.it" className="text-gold hover:underline">kenny@vrabo.it</a>
         </p>
       </div>
     </section>

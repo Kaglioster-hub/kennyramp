@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="flex gap-6 mt-4">
           {/* Spotify */}
           <a
-            href="https://open.spotify.com/artist/3vWxXqFti8tH2nFhVZqbhF"
+            href="https://open.spotify.com/intl-it/artist/49LflvfRzQAxMF7UDFwmCu"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-gold transition transform hover:scale-110"

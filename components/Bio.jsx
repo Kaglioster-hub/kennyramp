@@ -63,9 +63,11 @@ export default function Bio() {
                 il suo percorso con esperienze di vita e lavoro. Tra il 2016 e il 2017 vive a{" "}
                 <strong>Bratislava</strong>, lavorando per <strong>IBM</strong>, esperienza intensa
                 segnata anche da un lutto che lo riporta a Roma con nuova consapevolezza. Nel 2020
-                affronta problemi legali a <strong>Boston</strong>. Poco dopo torna a Roma, proprio
-                allo scoppio della pandemia: l’isolamento forzato diventa laboratorio creativo, da cui
-                nascono nuove tracce e visioni.
+                affronta problemi legali a <strong>Boston</strong>. Poco dopo torna a Roma, treq quattro mesi prima dello
+                scoppio della pandemia: l’isolamento forzato diventa laboratorio creativo, da cui nascono nuove tracce e visioni.
+                E' in questo periodo che la sua vita subisce un profondo e repentino mutamento, proprio a causa della 
+                sua coerenza recondita, che lo ha portato a mantenere una posizione di puro senso critico,
+                subendo purtroppo l'incomprensione o la compresione tardiva della sua posizione.
               </p>
 
               <h3 className="text-xl font-semibold text-gold mt-8">🎶 Presente e futuro</h3>
@@ -78,7 +80,10 @@ export default function Bio() {
               </p>
               <p>
                 Il 18 settembre 2025 uscirà <strong>SIMDV 3 – Kuore Matto: The Renaissance Giullari Version</strong>,
-                nuovo capitolo che conferma la sua voce cruda, libera e irrinunciabile.
+                nuovo capitolo che conferma la sua voce cruda, libera e irrinunciabilmente vera. 
+                Sarà su tutte le piattaforme di streaming, ma non su Apple iTunes, a causa di cavilli e questioni
+                riguardanti la grafica dell'album, peraltro cambiata all'ultimo momento e perfettamente
+                coerente con lo stile dei due SIMDV usciti in precedenza e rimossi dalle piattaforme.
               </p>
             </>
           ) : (
