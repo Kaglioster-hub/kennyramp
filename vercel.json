@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "www.kennyramp.shop", "destination": "https://kennyramp.shop", "permanent": true }
+  ]
+}

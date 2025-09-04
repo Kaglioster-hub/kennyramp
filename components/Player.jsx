@@ -10,7 +10,7 @@ export default function Player() {
     <>
       {/* 🔹 Popup iniziale */}
       {showPopup && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-xl">
+        <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 backdrop-blur-xl">
           <div className="bg-gradient-to-br from-graphite to-black text-white rounded-2xl p-8 max-w-md text-center shadow-glowBlue animate-fadeIn">
             <h3 className="text-xl font-bold mb-4 text-gold drop-shadow-glowGold">
               Vuoi ascoltare la playlist <br />
@@ -27,7 +27,7 @@ export default function Player() {
                   setShowPopup(false);
                 }}
               >
-                🎧 Sì, fammi ascoltare
+                🎧 Sì
               </button>
               <button
                 className="px-5 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition"
@@ -36,7 +36,7 @@ export default function Player() {
                   setShowPopup(false);
                 }}
               >
-                🚫 No, grazie
+                🚫 No
               </button>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function Player() {
 
       {/* 🔹 Tray compatta */}
       {!showPopup && !active && (
-        <div className="fixed bottom-4 right-4 z-40 bg-black/80 backdrop-blur-md rounded-xl shadow-glowBlue px-4 py-2 flex items-center gap-3 animate-fadeIn">
+        <div className="fixed bottom-4 right-4 z-50 bg-black/80 backdrop-blur-md rounded-xl shadow-glowBlue px-4 py-2 flex items-center gap-3 animate-fadeIn">
           <span className="text-gray-300 text-sm">Player disponibile</span>
           <button
             className="px-3 py-1 bg-gold text-black font-semibold rounded-lg hover:scale-105 transition"
@@ -58,7 +58,7 @@ export default function Player() {
 
       {/* 🔹 Player Spotify embed */}
       {active && (
-        <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-xl border-t border-white/10 animate-slideUp">
+        <div className="fixed bottom-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-xl border-t border-white/10 animate-slideUp">
           <div className="flex justify-between items-center px-4 py-2">
             <span className="text-gold font-semibold">🎶 Playlist ufficiale</span>
             <button
