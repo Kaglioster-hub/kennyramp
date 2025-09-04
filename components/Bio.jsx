@@ -14,7 +14,9 @@ export default function Bio() {
             <button
               onClick={() => setLang("it")}
               className={`px-2 py-1 rounded ${
-                lang === "it" ? "bg-gold text-black font-bold" : "bg-black/30 text-gray-300"
+                lang === "it"
+                  ? "bg-gold text-black font-bold"
+                  : "bg-black/30 text-gray-300"
               }`}
             >
               IT
@@ -22,7 +24,9 @@ export default function Bio() {
             <button
               onClick={() => setLang("en")}
               className={`px-2 py-1 rounded ${
-                lang === "en" ? "bg-gold text-black font-bold" : "bg-black/30 text-gray-300"
+                lang === "en"
+                  ? "bg-gold text-black font-bold"
+                  : "bg-black/30 text-gray-300"
               }`}
             >
               EN
@@ -50,12 +54,28 @@ export default function Bio() {
                 aprendogli nuove connessioni. Sarà proprio Hyst a fargli conoscere{" "}
                 <strong>BabySmoka</strong> (oggi <strong>YDFW Ñino</strong>) e{" "}
                 <strong>DrLupo</strong> (oggi <strong>Mordi</strong>), con cui nasceranno legami
-                personali e collaborazioni durature.
+                personali e collaborazioni durature. Per lui, collaborare significa spesso unire
+                intenti e poi divergere, lasciare che le differenze creino nuove traiettorie.
+                Al contrario, le collaborazioni nate solo per il mercato le considera simili
+                alle amicizie tossiche di certa gente opportunista: relazioni senza anima.
+                L’arte, per Kenny, è un’altra cosa, un movimento vitale che non si riduce a
+                strategia commerciale.
               </p>
 
               <blockquote className="border-l-4 border-gold pl-4 italic text-gold/90 shadow-glowGold">
                 «Kenny Ramp non leviga: lascia che la verità graffi. Ogni imperfezione è un marchio di autenticità.»
               </blockquote>
+
+              <h3 className="text-xl font-semibold text-gold mt-8">🎓 Formazione e approccio</h3>
+              <p>
+                Ha compiuto studi classici, che hanno segnato il suo immaginario e il suo lessico,
+                pur senza mai cadere nell’accademismo. Non ama parlare della sua vita privata:
+                ha sempre mantenuto un confine netto tra palco e realtà, mostrando al pubblico
+                soltanto il lato empatico. È capace di apparire fuori dagli schemi e fuori misura,
+                ma dietro questa immagine rimane saldo un rigore interiore. In questo senso,
+                si avvicina idealmente alla figura di <strong>Luigi Tenco</strong>, e ne fa eco
+                in una citazione che sente sua: «Perché scrivi di cose tristi? Perché quando sono felice esco.»
+              </p>
 
               <h3 className="text-xl font-semibold text-gold mt-8">🌍 Esperienze e viaggi</h3>
               <p>
@@ -63,11 +83,23 @@ export default function Bio() {
                 il suo percorso con esperienze di vita e lavoro. Tra il 2016 e il 2017 vive a{" "}
                 <strong>Bratislava</strong>, lavorando per <strong>IBM</strong>, esperienza intensa
                 segnata anche da un lutto che lo riporta a Roma con nuova consapevolezza. Nel 2020
-                affronta problemi legali a <strong>Boston</strong>. Poco dopo torna a Roma, treq quattro mesi prima dello
+                affronta problemi legali a <strong>Boston</strong>. Poco dopo torna a Roma, tre-quattro mesi prima dello
                 scoppio della pandemia: l’isolamento forzato diventa laboratorio creativo, da cui nascono nuove tracce e visioni.
-                E' in questo periodo che la sua vita subisce un profondo e repentino mutamento, proprio a causa della 
-                sua coerenza recondita, che lo ha portato a mantenere una posizione di puro senso critico,
-                subendo purtroppo l'incomprensione o la compresione tardiva della sua posizione.
+                È in questo periodo che la sua vita subisce un profondo e repentino mutamento,
+                proprio a causa della sua coerenza recondita, che lo ha portato a mantenere
+                una posizione di puro senso critico, subendo spesso incomprensioni o riconoscimenti tardivi.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gold mt-8">🎚️ Produzione e visione</h3>
+              <p>
+                Per quanto riguarda la produzione, Kenny ha sempre sostenuto che l’hip hop,
+                inteso nel suo vero significato, fosse rappresentazione fedele del reale e del
+                contesto. Da qui la sua scelta di campionare molto e spesso direttamente dal
+                luogo stesso di origine, dalla cultura e dalla lingua che viveva attorno a lui.
+                Nei suoi brani i campioni di musica e suoni italiani non sono casualità, ma
+                dichiarazione di poetica. Un gesto che all’inizio appariva anomalo e avanguardistico,
+                e che oggi, in un’epoca in cui il sampling italiano domina la scena, rivela tutta
+                la sua lungimiranza.
               </p>
 
               <h3 className="text-xl font-semibold text-gold mt-8">🎶 Presente e futuro</h3>
@@ -81,9 +113,9 @@ export default function Bio() {
               <p>
                 Il 18 settembre 2025 uscirà <strong>SIMDV 3 – Kuore Matto: The Renaissance Giullari Version</strong>,
                 nuovo capitolo che conferma la sua voce cruda, libera e irrinunciabilmente vera. 
-                Sarà su tutte le piattaforme di streaming, ma non su Apple iTunes, a causa di cavilli e questioni
-                riguardanti la grafica dell'album, peraltro cambiata all'ultimo momento e perfettamente
-                coerente con lo stile dei due SIMDV usciti in precedenza e rimossi dalle piattaforme.
+                Sarà disponibile su tutte le piattaforme di streaming, escluso Apple iTunes, per
+                questioni legate alla grafica dell’album, modificata all’ultimo momento e resa coerente
+                con lo stile dei due SIMDV precedenti, poi rimossi dalle piattaforme.
               </p>
             </>
           ) : (
@@ -104,13 +136,25 @@ export default function Bio() {
                 <strong>Hyst</strong> (then linked to AltoEnt) recognized his talent and vision,
                 introducing him to new connections. It was Hyst who introduced him to{" "}
                 <strong>BabySmoka</strong> (now <strong>YDFW Ñino</strong>) and{" "}
-                <strong>DrLupo</strong> (now <strong>Mordi</strong>), with whom long-lasting bonds and
-                collaborations were built.
+                <strong>DrLupo</strong> (now <strong>Mordi</strong>). For Kenny, collaboration means
+                joining forces and then diverging, allowing differences to create new directions.
+                In contrast, collaborations driven purely by market logic resemble toxic friendships
+                built on opportunism. Art, in his view, is something else entirely.
               </p>
 
               <blockquote className="border-l-4 border-gold pl-4 italic text-gold/90 shadow-glowGold">
                 “Kenny Ramp does not polish: he lets truth scratch. Every imperfection is a mark of authenticity.”
               </blockquote>
+
+              <h3 className="text-xl font-semibold text-gold mt-8">🎓 Background and approach</h3>
+              <p>
+                He studied classics, which shaped his imagery and lexicon without making him
+                academic. He has always avoided exposing his private life, keeping it outside the
+                public’s reach except for his empathetic side. He often appears unconventional and
+                outside the box, yet he embodies an inner discipline. In this sense, he is one of the
+                first to re-approach the figure of <strong>Luigi Tenco</strong>, echoing a line he
+                feels deeply: “Why do you write about sad things? Because when I’m happy, I go out.”
+              </p>
 
               <h3 className="text-xl font-semibold text-gold mt-8">🌍 Experiences and journeys</h3>
               <p>
@@ -119,8 +163,18 @@ export default function Bio() {
                 <strong>Bratislava</strong>, working for <strong>IBM</strong>—a period marked by both
                 intensity and personal loss that brought him back to Rome with new awareness. In 2020
                 he faced legal troubles in <strong>Boston</strong>. Shortly after, he returned to Rome
-                just as the pandemic began: the forced isolation became a creative laboratory, giving
-                birth to dozens of tracks and new visions.
+                just before the pandemic broke out: the forced isolation became a creative laboratory,
+                giving birth to new tracks and visions.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gold mt-8">🎚️ Production and vision</h3>
+              <p>
+                Kenny has always believed that hip hop, in its truest sense, must represent reality
+                and context. For this reason, he chose to sample extensively and directly from his
+                own surroundings, culture, and language. Italian samples in his repertoire are not
+                random but deliberate statements of poetics—an avant-garde approach at the time,
+                which paradoxically anticipated today’s trend where Italian sampling has become
+                mainstream.
               </p>
 
               <h3 className="text-xl font-semibold text-gold mt-8">🎶 Present and future</h3>
@@ -132,8 +186,11 @@ export default function Bio() {
                 <em>Mont Saint-Michel</em> (2021), <em>Non ci sei</em> (2021), <em>Maestrini</em> (2025).
               </p>
               <p>
-                On September 18, 2025, he will release <strong>SIMDV 3 – Kuore Matto: The Renaissance Giullari Version</strong>,
-                a new chapter confirming his raw, free, and essential voice in the Italian independent scene.
+                On September 18, 2025, he will release{" "}
+                <strong>SIMDV 3 – Kuore Matto: The Renaissance Giullari Version</strong>, a new
+                chapter that confirms his raw, free, and uncompromising voice. It will be available
+                on all streaming platforms, except Apple iTunes, due to artwork issues aligned with
+                the previous SIMDV releases.
               </p>
             </>
           )}
