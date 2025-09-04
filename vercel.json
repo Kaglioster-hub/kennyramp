@@ -1,5 +1,12 @@
 {
   "redirects": [
-    { "source": "www.kennyramp.shop", "destination": "https://kennyramp.shop", "permanent": true }
+    { "source": "www.kennyramp.shop", "destination": "https://kennyramp.shop", "permanent": true },
+    { "source": "www.kennyramp.vrabo.it", "destination": "https://kennyramp.vrabo.it", "permanent": true },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": ".*\\.vercel\\.app" }],
+      "destination": "https://kennyramp.vrabo.it/:path*",
+      "permanent": true
+    }
   ]
 }
