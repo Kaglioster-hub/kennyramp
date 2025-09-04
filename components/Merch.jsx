@@ -15,18 +15,28 @@ export default function Merch() {
   ];
 
   const paypalBaseUrl = "https://www.paypal.com/cgi-bin/webscr";
-  const paypalBusiness = "paypal@vrabo.it";
+  const paypalBusiness = "kenny@vrabo.it";
 
-  // Calcolo prezzi dinamici (dal più vecchio al più giovane)
   const years = items.map(i => i.year);
   const minYear = Math.min(...years);
   const maxYear = Math.max(...years);
 
+  // Arrotonda al più vicino X,90
+  const roundTo90 = (num) => {
+    const intPart = Math.floor(num);
+    const lower = intPart - 1 + 0.90; // es. 12,90
+    const upper = intPart + 0.90;     // es. 13,90
+    return (Math.abs(num - lower) < Math.abs(num - upper) ? lower : upper).toFixed(2);
+  };
+
   const getPrices = (year) => {
     const ratio = (year - minYear) / (maxYear - minYear || 1);
-    const digital = (10.9 + (4 * ratio)).toFixed(2); // 10.90 → 14.90
-    const physical = (14.9 + (5 * ratio)).toFixed(2); // 14.90 → 19.90
-    return { digital, physical };
+    const digitalRaw = 10.9 + (4 * ratio);   // 10.90 → 14.90
+    const physicalRaw = 14.9 + (5 * ratio);  // 14.90 → 19.90
+    return {
+      digital: roundTo90(digitalRaw),
+      physical: roundTo90(physicalRaw),
+    };
   };
 
   return (
