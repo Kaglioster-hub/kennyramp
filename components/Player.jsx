@@ -73,10 +73,21 @@ export default function Player() {
             width="100%"
             height="200"
             frameBorder="0"
-            allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             className="rounded-t-xl shadow-glowBlue"
           ></iframe>
+          {/* ℹ️ Messaggio + link esterno */}
+          <div className="px-4 py-3 text-center text-gray-400 text-xs bg-black/70 border-t border-white/5">
+            ℹ️ Con Spotify Free ascolti solo le anteprime (30s). 
+            <a
+              href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2qCrCQ"
+              target="_blank"
+              className="ml-2 text-neonblue hover:underline font-semibold"
+            >
+              Apri su Spotify →
+            </a>
+          </div>
         </div>
       )}
     </>
